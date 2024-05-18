@@ -1,56 +1,43 @@
 
-# Fitify Uygulaması
+# Fitify App
 
-Bu proje, kullanıcıların günlük, haftalık ve aylık adım ve kalori yakma hedeflerini takip etmelerini sağlayan bir React Native uygulamasıdır. Kullanıcılar Firebase ile kayıt olabilir ve kimlik doğrulaması yaparak giriş yapabilirler.
+This project is a React Native application that allows users to track their daily, weekly, and monthly step and calorie burn goals. Users can register and log in using Firebase for authentication.
 
-## Özellikler
+## Features
 
-- Kullanıcı kaydı ve kimlik doğrulama (Firebase ile)
-- Kullanıcı hedefleri belirleme: Günlük, haftalık ve aylık adım ve kalori yakma hedefleri belirlenebilir.
-- İlerleme güncelleme: Günlük adım ve kalori yakma verileri girilerek hedeflerden düşülür.
-- Hedef ve ilerleme takibi: Kullanıcılar hedeflerini ve ilerlemelerini ana menüden görüntüleyebilirler.
-- Veriler yerel olarak AsyncStorage ile saklanır.
+- User registration and authentication (via Firebase)
+- User goal setting: Daily, weekly, and monthly step and calorie burn goals can be set.
+- Progress updating: Daily step and calorie burn data can be entered and subtracted from the goals.
+- Goal and progress tracking: Users can view their goals and progress from the main menu.
+- Data is stored locally using AsyncStorage.
 
-## Ekran Görüntüleri
+## Usage
 
-![Ekran Görüntüsü 1](1.jpeg)
-![Ekran Görüntüsü 2](2.jpeg)
-![Ekran Görüntüsü 3](3.jpeg)
-![Ekran Görüntüsü 4](4.jpeg)
-![Ekran Görüntüsü 5](5.jpeg)
+### User Registration and Login
 
+When users first enter the app, they can register with their first name, last name, email address, and password. After registering, they can log in with the same information.
 
+### Main Menu
 
+In the main menu, users can view their set goals and current progress. There are three main tabs:
+- **Home**: Main menu
+- **Goals**: Goal setting screen
+- **Profile**: User profile
 
-## Kullanım
+### Goal Setting
 
-### Kullanıcı Kaydı ve Giriş
+Users can go to the `Goals` tab to set their daily, weekly, and monthly step and calorie burn goals.
 
-Kullanıcılar uygulamaya ilk girdiklerinde,Adları, soyadları, e-posta adresleri ve şifreleri ile kayıt olabilirler. Kayıt olduktan sonra aynı bilgilerle giriş yapabilirler.
+### Progress Updating
 
-### Ana Menü
+Users can go to the `Progress` screen to enter their daily step and calorie burn data to update their progress. This data is subtracted from the set goals.
 
-Ana menüde, kullanıcı belirlediği hedefleri ve güncel ilerlemelerini görebilir. Üç ana sekme bulunur:
-- **Home**: Ana menü
-- **Goals**: Hedef belirleme ekranı
-- **Profile**: Kullanıcı profili
+## To Do
 
-### Hedef Belirleme
+- [ ] Add push notifications
+- [ ] Add a feature to reset goals
+- [ ] Enhance user registration and authentication features
 
-Kullanıcılar `Goals` sekmesine giderek günlük, haftalık ve aylık adım ve kalori yakma hedeflerini belirleyebilirler.
+## License
 
-### İlerleme Güncelleme
-
-Kullanıcılar `Progress` ekranında günlük adım ve kalori yakma verilerini girerek ilerlemelerini güncelleyebilirler. Bu veriler, belirlenen hedeflerden düşülerek güncellenir.
-
-## Yapılacaklar
-
-- [ ] Push Bildirimleri eklenmesi
-- [ ] Hedeflerin sıfırlanması için bir özellik eklenmesi
-- [ ] Kullanıcı kaydı ve kimlik doğrulama ile ilgili gelişmiş özellikler
-
-
-
-## Lisans
-
-Bu proje [MIT Lisansı](LICENSE) ile lisanslanmıştır.
+This project is licensed under the [MIT License](LICENSE).
